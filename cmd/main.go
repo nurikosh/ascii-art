@@ -5,6 +5,7 @@ import (
 	"os"
 
 	printing "ascii-art/art"
+	validators "ascii-art/validation"
 )
 
 func main() {
@@ -16,6 +17,13 @@ func main() {
 	}
 
 	input := args[0]
+	if !validators.BannerValidity() {
+		fmt.Println("Banner file was changed")
+		return
+	}
+	if !validators.AsciiCharValidation(input) {
+		return
+	}
 
 	printing.Processing(input)
 }
