@@ -11,7 +11,6 @@ This program converts input text into stylized ASCII art using predefined charac
 - Loads custom ASCII character templates from banner files
 - Processes multi-line input with `\n` separators
 - Generates properly aligned ASCII art output
-- Efficient string handling using `strings.Builder`
 
 ---
 
@@ -22,8 +21,9 @@ This program converts input text into stylized ASCII art using predefined charac
    ```bash
    git clone https://github.com/yourusername/ascii-art-generator.git
 Navigate to the project directory:
-
+```bash
 cd ascii-art-generator
+```
 🚀 Usage
 Run the program using:
    ```bash
