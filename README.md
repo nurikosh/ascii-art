@@ -23,17 +23,12 @@ This program converts input text into stylized ASCII art using predefined charac
    git clone https://github.com/yourusername/ascii-art-generator.git
 Navigate to the project directory:
 
-bash
-Copy
-Edit
 cd ascii-art-generator
 🚀 Usage
 Run the program using:
-
-bash
-Copy
-Edit
-go run main.go [input_string]
+   ```bash
+   go run ./cmd [input_string]
+   ```
 🔹 Arguments
 input_string: The text to convert to ASCII art (optional, can also be provided at runtime).
 
@@ -66,11 +61,27 @@ Prints the completed ASCII art output.
 
 📌 Example
 Input:
-
-Hello
-There
+```bash
+go run ./cmd "Hello\nThere"
+```
 Output:
-<pre> ```text | | | | | | | |__| | ___ | | ___ ___ ___ ___ | __ | / _ \ | | / _ \ / _ \ / __| / _ \ | | | | | (_) | | | | (_) | | (_) | \__ \| __/ |_| |_| \___/ |_| \___/ \___/ |___/ \___| ``` </pre>
+<pre>
+| |  | |        | | | |         
+| |__| |   ___  | | | |   ___   
+|  __  |  / _ \ | | | |  / _ \  
+| |  | | |  __/ | | | | | (_) | 
+|_|  |_|  \___| |_| |_|  \___/  
+                                
+                                
+ _______   _                           
+|__   __| | |                          
+   | |    | |__     ___   _ __    ___  
+   | |    |  _ \   / _ \ | '__|  / _ \ 
+   | |    | | | | |  __/ | |    |  __/ 
+   |_|    |_| |_|  \___| |_|     \___| 
+                                       
+                                       
+</pre>
 🔮 Future Enhancements
 ✅ Support for colored output
 
